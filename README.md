@@ -44,10 +44,44 @@ SauceDemoProject-Playwright/
 > **Prerequisite**: 
 Install VS Code
 Node.js (LTS recommended). 
+-Then check the versions in cmd
+-(node -v, npm -v, npx -v).
+
+Create a directory by going to the path first-
+1.cd %USERPROFILE%\Document
+2.mkdir SauceDemoProject-Playwright
+3.cd SauceDemoProject-Playwright
+4.npm init -y
  
 > This project was created with `npm init playwright@latest`.
+5.npm init playwright@latest
+6.Proceed with Y
+7.Select the Language - TypeScript
+8.True
 
-Install dependencies:
+-------------------------------------------------------------------------------------------------
+Inside that directory, you can run several commands:
 
-```bash
-npm ci
+  npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --headed
+    Runs the tests in headed mode.  
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+ To open last HTML report run:
+  npx playwright show-report   
+
+----------------------------------------------------------------------------------------------------
+Open the VSCode via - code.
